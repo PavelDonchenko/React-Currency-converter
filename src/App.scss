@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(235, 208, 208);
+}
+.App {
+  text-align: center;
+  min-width: 100vh;
+}
+.Header {
+  h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: gray;
+  }
+}
+.converWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.currency {
+  max-width: 1000px;
+  display: flex;
+  text-align: left;
+  i {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  form {
+    display: flex;
+    margin: 0 0 10px 0;
+    input {
+      height: 40px;
+      width: 300px;
+      outline: none;
+      border: 1px solid rgb(0, 0, 0, 0.3);
+      font-size: 25px;
+      font-weight: 900;
+    }
+    select {
+      width: 90px;
+      font-size: 25px;
+      border: 1px solid rgb(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+    }
+  }
+}
+.currency-left {
+  flex: 1 1 50%;
+  background-color: #fff;
+  padding: 50px;
+  position: relative;
+}
+.currency-right {
+  flex: 1 1 50%;
+  background-color: rgb(28, 134, 163);
+  padding: 50px;
+}
+.icon {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  svg {
+    width: 40px;
+    height: 40px;
+    line {
+      stroke: #fff;
+    }
+    polyline {
+      stroke: #fff;
+    }
+  }
+  padding: 5px;
+  background: rgb(80, 185, 214);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 20px 50px;
+  button{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  p{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  h2{
+    font-size: 48px;
+    font-weight: 900;
+  }
+
+}
+.modal-ua {
+  background: rgb(50,80,181);
+  background: linear-gradient(90deg, rgba(50,80,181,0.8354692218684349) 34%, rgba(226,222,15,1) 100%);
+}
+.modal-rus {
+  background: url('./assets/bg.jpg') no-repeat center;
+  background-size: auto;
+}
+.modal-img{
+  width: 150px;
+  height: 200px;
+  margin-bottom: 20px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
